@@ -2,7 +2,13 @@
 
   <div id="app">
 
-    <Footer></Footer>
+      <div id="page-wrapper">
+
+      </div>
+
+      <div class="footer-wrapper">
+      <Footer></Footer>
+      </div>
 
   </div>
 </template>
@@ -13,10 +19,6 @@ import Footer from './components/footer.vue'
 
 export default {
   name: 'app',
-  data() {
-    return {
-    }
-  },
   components: {
     Footer
   }
@@ -38,4 +40,13 @@ body {
 			background-size:  cover;
 			background-image: url('/images/portfolio-background.jpg');
 }
+
+#page-wrapper{
+  min-height: calc(100vh - 150px);
+}
+
+.footer-wrapper {
+  text-align: center;
+}
+
 </style>

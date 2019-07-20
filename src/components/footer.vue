@@ -1,21 +1,27 @@
 <template>
-  <div class="wrapper">
-    <div id="footer">
-      <div class="container">
-        <div class="row-mb-3">
-          <div class="col-md">
-            <i class="fa fa-envelope" style="font-size:50px;color:white;"></i>
-          </div>
-          <div class="col-md">
-            <i class="fa fa-linkedin" style="font-size:50px;color:white;"></i>
-          </div>
-          <div class="col-md">
-            <i class="fa fa-github" style="font-size:50px;color:white;"></i>
-          </div>
+  <div id="footer">
+    <div class="container">
+
+        <div class="column">
+          <a class="thumbnail" href='mailto:patrick.dowling41@gmail.com'>
+            <i class="fa fa-envelope"></i>
+          </a>
         </div>
-      </div>
+
+        <div class="column">
+          <a class="thumbnail" href='https://www.linkedin.com/in/patrick-dowling-454ab8148'>
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="column">
+          <a class="thumbnail" href='https://github.com/patrickdowling41'>
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -33,16 +39,21 @@ export default {
   border-radius: 30px;
 }
 
-.wrapper {
-  text-align: center;
-}
-
 i {
-  padding: 25px;
+  margin: 25px;
 }
 
 .container {
   display: inline-block;
+}
+
+.thumbnail{
+  font-size:50px;
+  color:white;
+}
+
+.column {
+  display: inline;
 }
 
 </style>
