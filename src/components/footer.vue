@@ -34,13 +34,9 @@ export default {
 
 #footer {
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.8;
   display: inline-block;
   border-radius: 30px;
-}
-
-i {
-  margin: 25px;
 }
 
 .container {
@@ -54,6 +50,8 @@ i {
 
 .column {
   display: inline;
+  padding: 3vh;
 }
+
 
 </style>
