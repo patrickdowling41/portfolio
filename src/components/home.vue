@@ -20,12 +20,12 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 840px) {
   #container {
     flex-direction: row;
   }
 }
-@media only screen and (max-width: 960x) {
+@media only screen and (max-width: 840px) {
   #container {
     flex-direction: column;
   }
