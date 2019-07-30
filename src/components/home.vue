@@ -25,7 +25,7 @@ export default {};
     flex-direction: row;
   }
 }
-@media only screen and (max-width: 960x) {
+@media only screen and (max-width: 960px) {
   #container {
     flex-direction: column;
   }
