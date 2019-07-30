@@ -20,12 +20,12 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 960px) {
   #container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 960x) {
   #container {
     grid-template-columns: 1fr;
   }
@@ -42,6 +42,7 @@ export default {};
 #container {
   display: grid;
   grid-gap: 10px;
+  padding: 2vh;
 }
 
 .nav-button:hover {
