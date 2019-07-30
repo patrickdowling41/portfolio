@@ -1,8 +1,6 @@
 <template>
   <div id="home">
-
     <div id="container">
-
       <div class="nav-item">
         <a class="nav-button" v-on:click="aboutMe()">About me</a>
       </div>
@@ -10,37 +8,44 @@
       <div class="nav-item">
         <a class="nav-button" v-on:click="projects()">Projects</a>
       </div>
-
+      <div class="nav-item">
         <a class="nav-button" href="/static/PatrickDowlingResume.pdf">Resume</a>
-
+      </div>
     </div>
-
   </div>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
-<style lang="css" scoped>
-
+<style lang="scss" scoped>
+@media only screen and (min-width: 768px) {
+  #container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  #container {
+    grid-template-columns: 1fr;
+  }
+}
 .nav-button {
-    padding:2vh;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    color: white;
+  padding: 2vh;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: white;
 }
 
 #container {
-  padding: 2vh;
+  display: grid;
+  grid-gap: 10px;
 }
 
 .nav-button:hover {
-    color: white;
+  color: white;
 }
 
 #home {
@@ -49,10 +54,4 @@ export default {
   display: inline-block;
   border-radius: 30px;
 }
-
-.nav-item {
-  display:inline;
-}
-
-
 </style>
