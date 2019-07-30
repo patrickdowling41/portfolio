@@ -22,12 +22,12 @@ export default {};
 <style lang="scss" scoped>
 @media only screen and (min-width: 768px) {
   #container {
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 767px) {
   #container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 .nav-button {
@@ -40,7 +40,7 @@ export default {};
 }
 
 #container {
-  display: grid;
+  display: flex;
   grid-gap: 10px;
 }
 
